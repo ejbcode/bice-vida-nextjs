@@ -1,19 +1,9 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer {
@@ -49,17 +39,17 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 2rem;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: left;
 }
 
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.link {
-  color: blue;
 }
 
 .code {
