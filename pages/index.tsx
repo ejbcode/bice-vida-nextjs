@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Test Bice-Vida Lab</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link href="/favicon.ico" rel="icon" />
       </Head>
 
       <main className={styles.main}>
@@ -35,10 +36,10 @@ export default function Home() {
         </p>
 
         <p className={styles.description}>
-          El demo cuenta con dos links. El primero{" "}
+          El demo cuenta con dos links. El primero{' '}
           <Link href="/selecciona-un-seguro">
             <a className={styles.link}>Seleccciona</a>
-          </Link>{" "}
+          </Link>{' '}
           que se basa en el requerimiento. La mejora es que trae de forma
           dinámica (desde la BD) las opciones en el dropdown, en vez de hacerlo
           hardcoded como en la versión original. Y se elimina el botón para
@@ -46,10 +47,10 @@ export default function Home() {
         </p>
 
         <p className={styles.description}>
-          El otro link es de{" "}
+          El otro link es de{' '}
           <Link href="/seguros">
             <a className={styles.link}>Seguros</a>
-          </Link>{" "}
+          </Link>{' '}
           que muestra la lista de todos los productos que estén disponibles en
           la BD. Muestra la card del producto basada en el requerimiento, pero
           adicional, la card es un link para ir a la página del seguro y mostrar

@@ -20,7 +20,8 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
+    "prettier",
+    // "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended"
   ],
@@ -33,7 +34,7 @@
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-console": "off",
-   " @typescript-eslint/ban-ts-comment":"off",
+    " @typescript-eslint/ban-ts-comment":"off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
@@ -45,13 +46,13 @@
     "prettier/prettier": [
       "error",
       {
-        "printWidth": 100,
+        // "printWidth": 100,
         "trailingComma": "all",
         "tabWidth": 2,
-        "semi": true,
-        "singleQuote": false,
+        "singleQuote": true,
         "bracketSpacing": false,
-        "arrowParens": "always"
+        "arrowParens": "always",
+        "endOfLine": "auto"
       }
     ],
     "import/order": [

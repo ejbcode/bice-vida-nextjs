@@ -1,22 +1,17 @@
-import { ReadSyncOptions } from 'node:fs';
-import React from 'react'
-import { formatPrice } from "../../utils/formatPrice";
-import styles from './Card.module.css'
+import {formatPrice} from '../../utils/formatPrice';
+
+import styles from './Card.module.css';
 interface Props {
   optionSelected: Insurance[];
 }
 
-const Card: React.FC<Props> = ({ optionSelected }) => {
-  console.log(optionSelected);
-  const { image, name, price, description } = optionSelected[0]
-  console.log(name);
-
-
+const Card: React.FC<Props> = ({optionSelected}) => {
+  const {image, name, price, description} = optionSelected[0];
 
   return (
     <div className={styles.container}>
       <div className={styles.image}>
-        <img src={image} alt={name} />
+        <img alt={name} src={image} />
         <p className={styles.label}>{formatPrice(price)}</p>
       </div>
       <div className={styles.content}>
@@ -24,7 +19,7 @@ const Card: React.FC<Props> = ({ optionSelected }) => {
         <p className={styles.paragraph}>{description}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
